@@ -66,6 +66,11 @@ Recognize current database version
 
 .image images/detect.png
 
+* References
+
+.link https://discuss.zetetic.net/t/upgrading-to-sqlcipher-4/3283 Official Upgrading to SQLCipher 4 Guide
+.link https://www.zetetic.net/sqlcipher/sqlcipher-api Official SQLCipher API
+
 * Question
 
 .image images/question.png
