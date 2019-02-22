@@ -24,6 +24,7 @@ SQLite3 SEE vs. SQLCipher
 
 * Upgrading Request
 
+SQLCipher 3.4.2/SQLite3 3.20.1 => SQLCipher *4.0.1*/SQLite3 *3.26.0*
 .image images/why.png 320 640
 
 * Problem
