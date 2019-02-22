@@ -13,7 +13,7 @@ Custom file structure vs. Database
 
 Security: Encryption
 
-SQLite3 SSE vs. SQLCipher
+SQLite3 SEE vs. SQLCipher
 
 * Module user
 
