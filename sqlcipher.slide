@@ -1,0 +1,59 @@
+SQLCipher/SQLite3 upgrade
+Problem and Solution
+
+Cisco Jabber JMP Team
+Fan Yang
+fyang3@cisco.com
+
+* Background
+
+Jabber Local Storage
+
+Custom file structure vs. Database
+
+Security: Encryption
+
+SQLite3 SSE vs. SQLCipher
+
+* Module user
+
+- Jabberwerx
+- csf-CommunicationHistory
+- VoicemailServices
+- SCF
+
+* Upgrading Request
+
+.image images/why.png 320 640
+
+* Problem
+
+.image images/imcompatible.jpg 320 640
+
+SQLCipher 3.x => 4.x: *Backward*incompatible!*
+
+* Solution
+
+- Database File Migration
+- Custom Export Migration
+- Backwards Compatible
+
+* Database File Migration
+
+.code code/cipher_migrate.sql
+
+* Custom Export Migration
+
+.code code/custom_export_migrate.sql
+
+* Backwards Compatible
+
+* One more problem
+
+Recognize current database version
+
+.image images/detect.png
+
+* Question
+
+.image images/question.png
