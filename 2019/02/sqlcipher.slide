@@ -39,14 +39,25 @@ SQLCipher 3.x => 4.x: *Backward*incompatible!*
 - Custom Export Migration
 - Backwards Compatible
 
-* Database File Migration
+* Database File Migration (1)
 
 1. sqlite3_open open old version database
 2. do file cipher migrate
 .code code/sqlcipher/cipher_migrate.sql
 3. get the new version database to be used
 
-* Custom Export Migration
+* Database File Migration (2)
+
+Pros
+
+- implement: simple & easy
+- run: fast
+
+Cons
+
+- data: lost
+
+* Custom Export Migration (1)
 
 1. sqlite3_open create new version database
 2. sqlite3_close close new version database
@@ -55,6 +66,17 @@ SQLCipher 3.x => 4.x: *Backward*incompatible!*
 .code code/sqlcipher/custom_export_migrate.sql
 5. sqlite3_close close old version database
 6. get the new version database to be used
+
+* Custom Export Migration (2)
+
+Pros
+
+- data: not lost
+
+Cons
+
+- implement: complex
+- run: slower
 
 * Backwards Compatible
 
