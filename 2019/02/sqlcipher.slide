@@ -55,7 +55,8 @@ Pros
 
 Cons
 
-- data: lost
+- use default cipher settings only
+- seemly not stable as expected
 
 * Custom Export Migration (1)
 
@@ -71,7 +72,7 @@ Cons
 
 Pros
 
-- data: not lost
+- flexiable cipher settings supported
 
 Cons
 
